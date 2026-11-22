@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nordgrad – Social media, advertising and web design</title>
+  <meta name="description" content="More reach for your business: social media management, content with creators, ads on Instagram, Facebook and TikTok, and websites that turn attention into enquiries. Based in Augsburg, working across Germany and internationally.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="alternate" hreflang="de" href="https://nordgrad.eu/">
+  <link rel="alternate" hreflang="en" href="https://nordgrad.eu/en/">
+  <link rel="alternate" hreflang="x-default" href="https://nordgrad.eu/">
+  <link rel="icon" href="../zeichen.svg" type="image/svg+xml">
+  <script>
+    /* Bewegte Fassung nur, wenn das Gerät Bewegung nicht reduziert haben will.
+       Falls das Hauptskript nicht lädt, wird nach 4 s alles ohne Bewegung gezeigt. */
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      // Vorschau: mit ?bewegung=an läuft die bewegte Fassung auch dann, wenn am Gerät Animationen aus sind.
+      var erzwungen = /[?&]bewegung=an(&|$)/.test(location.search);
+      if (erzwungen) d.classList.add('erzwungen');
+      if (erzwungen || window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+        d.classList.add('bewegt');
+        setTimeout(function () { if (!window.__seiteBereit) d.classList.remove('bewegt'); }, 4000);
+      }
+    })();
+  </script>
+  <script type="module" crossorigin src="../assets/haupt-DTCzQ9o9.js"></script>
+  <link rel="stylesheet" crossorigin href="../assets/haupt-CMyVVZ3z.css">
+</head>
+<body>
+  <svg width="0" height="0" class="unsichtbar" aria-hidden="true" focusable="false">
+    <symbol id="zeichen" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 25.5 13.75 7 22.5 25.5" stroke-width="3.2"/>
+        <circle cx="25.75" cy="8.5" r="3" stroke-width="2.4"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a class="sprung" href="#inhalt">Skip to content</a>
+
+  <header class="kopf">
+    <div class="kopf-innen">
+      <a class="kopf-name" href="./" aria-label="Nordgrad, back to the home page">
+        <svg class="kopf-zeichen" aria-hidden="true"><use href="#zeichen"/></svg>
+        <span>Nordgrad</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a class="nur-breit" href="./#leistungen">Services</a>
+        <a class="nur-breit" href="./#ablauf">Process</a>
+        <a class="sprache" href="../" lang="de" hreflang="de" aria-label="Deutsche Fassung">DE</a>
+        <a class="kopf-kontakt" href="./#kontakt">Contact</a>
+      </nav>
+    </div>
+    <span class="lesefortschritt" aria-hidden="true"></span>
+  </header>
+
+  <main id="inhalt">
+    <!-- 1. Einstieg mit 3D-Visitenkarte -->
+    <section class="held" aria-labelledby="held-titel">
+      <div class="huelle held-text">
+        <h1 id="held-titel">More reach for your business.</h1>
+        <p class="vorspann" data-auf>Social media, content with creators, paid ads and the website to go with it. One person for everything, across Germany and internationally.</p>
+        <div class="knoepfe" data-auf>
+          <a class="knopf voll" href="mailto:nordgrad.augsburg@gmail.com?subject=Social%20media%20enquiry">Write an email</a>
+          <a class="knopf leer" href="#leistungen">See the services</a>
+        </div>
+      </div>
+
+      <div class="karte-raum">
+        <div class="karte-scroll">
+          <div class="karte-kipp">
+            <div class="karte" id="karte">
+              <div class="karte-seite karte-vorn">
+                <div class="karte-muster" aria-hidden="true"></div>
+                <div class="karte-glanz" aria-hidden="true"></div>
+                <svg class="karte-zeichen" aria-hidden="true"><use href="#zeichen"/></svg>
+                <div class="karte-kopf">
+                  <p class="karte-name">Constantin Csernai</p>
+                  <p class="karte-rolle">Founder of Nordgrad</p>
+                </div>
+                <p class="karte-ort">Augsburg, Germany</p>
+              </div>
+              <div class="karte-seite karte-hinten" inert>
+                <div class="karte-glanz" aria-hidden="true"></div>
+                <dl class="karte-daten">
+                  <div><dt>Email</dt><dd><a href="mailto:nordgrad.augsburg@gmail.com">nordgrad.augsburg@gmail.com</a></dd></div>
+                  <div><dt>Based in</dt><dd>Augsburg, Germany</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="karte-wenden" type="button" aria-controls="karte" data-vor="Flip the card" data-zurueck="Show the front">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10a6 6 0 0 1 10.6-3.8M16 10a6 6 0 0 1-10.6 3.8M14.8 2.8v3.6h-3.6M5.2 17.2v-3.6h3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-wenden-text>Flip the card</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 2. Leistungen: Scroll-Szene mit Handy -->
+    <section class="leistungen" id="leistungen" aria-labelledby="leistungen-titel">
+      <div class="huelle abschnitt-kopf">
+        <h2 id="leistungen-titel">What I do for you.</h2>
+        <p>Four building blocks that belong together. You can start with just one.</p>
+      </div>
+
+      <div class="spur" data-spur>
+        <div class="buehne">
+          <ol class="fortschritt" aria-hidden="true">
+            <li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li>
+          </ol>
+
+          <article class="leistung" data-leistung>
+            <div class="leistung-text">
+              <h3>Social media management</h3>
+              <p>I plan your posts for Instagram, TikTok and Facebook, design them in your style and publish them regularly. I keep an eye on comments and messages. You approve every post before it goes live.</p>
+            </div>
+            <div class="geraet" role="img" aria-label="Example image: a social media profile with posts and this week’s posting plan">
+              <div class="schirm"><div class="schirm-inhalt s-feed" aria-hidden="true">
+                <div class="app-kopf"><span class="avatar"></span><span class="app-name">your.business</span><span class="marke">Example</span></div>
+                <div class="beitrag">
+                  <div class="bild bild-laden"><i></i><i></i><i></i></div>
+                  <div class="aktionen"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9.6A4 4 0 0 1 12 8a4 4 0 0 1 7 2.4C19 15.6 12 20 12 20z"/></svg><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z"/></svg><svg viewBox="0 0 24 24"><path d="m20 4-8.5 16-2-7-7-2z"/></svg></div>
+                  <span class="zeile" style="--w:72%"></span>
+                  <span class="zeile" style="--w:46%"></span>
+                </div>
+                <div class="beitrag"><div class="bild bild-zwei"><i></i><i></i></div></div>
+                <div class="plan">
+                  <span class="plan-titel">Planned this week</span>
+                  <ol class="tage"><li class="an"><b></b>Mon</li><li><b></b>Tue</li><li class="an"><b></b>Wed</li><li><b></b>Thu</li><li class="an"><b></b>Fri</li><li><b></b>Sat</li><li><b></b>Sun</li></ol>
+                </div>
+              </div></div>
+            </div>
+          </article>
+
+          <article class="leistung" data-leistung>
+            <div class="leistung-text">
+              <h3>Content and creators</h3>
+              <p>Short videos, reels and photos for your channels. In and around Augsburg I shoot on site myself. If you like, I connect you with creators who fit your business and your region.</p>
+            </div>
+            <div class="geraet" role="img" aria-label="Example image: a short video with three shots from a business">
+              <div class="schirm"><div class="schirm-inhalt s-reel" aria-hidden="true">
+                <div class="streifen">
+                  <div class="schuss schuss-1"><b></b><i></i><u></u></div>
+                  <div class="schuss schuss-2"><i></i><b></b></div>
+                  <div class="schuss schuss-3"><i></i></div>
+                </div>
+                <span class="marke hell">Example</span>
+                <div class="reel-leiste"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9.6A4 4 0 0 1 12 8a4 4 0 0 1 7 2.4C19 15.6 12 20 12 20z"/></svg><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z"/></svg><svg viewBox="0 0 24 24"><path d="m20 4-8.5 16-2-7-7-2z"/></svg></div>
+                <div class="reel-fuss">
+                  <span class="reel-wer"><span class="avatar"></span>Creator</span>
+                  <span class="reel-titel">A day at your business</span>
+                  <span class="reel-balken"><i></i></span>
+                </div>
+              </div></div>
+            </div>
+          </article>
+
+          <article class="leistung" data-leistung>
+            <div class="leistung-text">
+              <h3>Paid ads</h3>
+              <p>Ads on Instagram, Facebook and TikTok for exactly the people you want to reach: around your location, in one country or in several. You set the budget, I set up the campaigns, keep improving them and show you what they delivered.</p>
+            </div>
+            <div class="geraet" role="img" aria-label="Example image: a map with a radius around a location and an ad below it">
+              <div class="schirm"><div class="schirm-inhalt s-anzeige" aria-hidden="true">
+                <div class="karte-flaeche">
+                  <svg viewBox="0 0 200 220" preserveAspectRatio="xMidYMid slice">
+                    <rect width="200" height="220" fill="#e7eee9"/>
+                    <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round">
+                      <path d="M-10 60 80 78l130 -30M30 -10l22 120 -20 130M120 -10l18 100 40 140M-10 150l110 -16 110 34"/>
+                    </g>
+                    <g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round">
+                      <path d="M0 105l52 4M52 109l88 -20M70 0l14 78M84 78l16 56M150 60l60 14M100 134l-14 90M138 90l-38 44"/>
+                    </g>
+                    <path d="M172 -10c-8 40 6 70 -4 110s-26 70 -20 130" fill="none" stroke="#a9cfe0" stroke-width="9" stroke-linecap="round"/>
+                    <path d="M-10 196c40 -6 70 -30 100 -34" fill="none" stroke="#a9cfe0" stroke-width="5" stroke-linecap="round"/>
+                    <rect x="20" y="20" width="26" height="22" rx="4" fill="#d3e4d8"/>
+                    <rect x="112" y="150" width="34" height="26" rx="4" fill="#d3e4d8"/>
+                  </svg>
+                  <span class="umkreis"></span>
+                  <span class="nadel"><svg viewBox="0 0 24 30"><path d="M12 29S2 18.5 2 11.5a10 10 0 0 1 20 0C22 18.5 12 29 12 29z"/><circle cx="12" cy="11.5" r="3.6" fill="#fff"/></svg></span>
+                  <span class="marke">Example</span>
+                </div>
+                <div class="regler"><span>Radius around your location</span><span class="regler-bahn"><i></i><b></b></span></div>
+                <div class="anzeige">
+                  <span class="avatar"></span>
+                  <span class="anzeige-text"><span class="app-name">your.business</span><span class="gesponsert">Sponsored</span></span>
+                  <span class="anzeige-knopf">Learn more</span>
+                </div>
+              </div></div>
+            </div>
+          </article>
+
+          <article class="leistung" data-leistung>
+            <div class="leistung-text">
+              <h3>Web design</h3>
+              <p>A fast, clear website where visitors from social media and ads find what they are looking for straight away and can call or write to you directly. With legal notice and privacy policy, and without tools that send your visitors’ data to third parties.</p>
+            </div>
+            <div class="geraet" role="img" aria-label="Example image: a website on a phone, assembling itself from building blocks">
+              <div class="schirm"><div class="schirm-inhalt s-web" aria-hidden="true">
+                <div class="browser"><span class="adresse">your-business.com</span><span class="marke">Example</span></div>
+                <div class="web-held baustein"><span class="zeile hell" style="--w:78%"></span><span class="zeile hell" style="--w:52%"></span></div>
+                <div class="web-knopf baustein">Call now</div>
+                <div class="web-zeilen baustein"><span class="zeile" style="--w:92%"></span><span class="zeile" style="--w:84%"></span><span class="zeile" style="--w:60%"></span></div>
+                <div class="web-kacheln"><span class="baustein"></span><span class="baustein"></span></div>
+                <div class="web-fuss baustein"><span>Legal notice</span><span>Privacy</span></div>
+              </div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Weltkugel aus Beitrags-Kacheln (3D) -->
+    <section class="kugel" aria-labelledby="kugel-titel">
+      <div class="kugel-spur" data-kugel>
+        <div class="kugel-buehne">
+          <div class="kugel-bild">
+            <canvas class="kugel-leinwand" aria-hidden="true"></canvas>
+            <svg class="kugel-ersatz" aria-hidden="true"><use href="#zeichen"/></svg>
+          </div>
+          <div class="huelle kugel-text">
+            <h2 id="kugel-titel">Many single posts add up to reach.</h2>
+            <p data-kugel-satz>One post on its own hardly gets noticed. Regular, planned and in a consistent style, posts build a picture people recognise.</p>
+            <p class="kugel-notiz" data-kugel-satz>Each tile stands for one post. Together they travel far beyond your own city.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Ablauf -->
+    <section class="ablauf" id="ablauf" aria-labelledby="ablauf-titel">
+      <div class="huelle">
+        <div class="abschnitt-kopf">
+          <h2 id="ablauf-titel">How it works.</h2>
+          <p>Four steps, from the first conversation to the monthly review.</p>
+        </div>
+        <ol class="schritte" data-schritte>
+          <li class="schritte-linie" aria-hidden="true"><span></span></li>
+          <li class="schritt">
+            <span class="schritt-nr" aria-hidden="true">1</span>
+            <h3>Conversation</h3>
+            <p>We talk about your business, your customers and your goals, in person or by video call. This is free.</p>
+          </li>
+          <li class="schritt">
+            <span class="schritt-nr" aria-hidden="true">2</span>
+            <h3>Plan and quote</h3>
+            <p>I look at your channels and propose a plan, with a fixed price per month or per project.</p>
+          </li>
+          <li class="schritt">
+            <span class="schritt-nr" aria-hidden="true">3</span>
+            <h3>Delivery</h3>
+            <p>I produce content, schedule posts and launch the ads. You approve what goes online.</p>
+          </li>
+          <li class="schritt">
+            <span class="schritt-nr" aria-hidden="true">4</span>
+            <h3>Review</h3>
+            <p>Every month you get a short overview: reach, new followers, enquiries and what we change next.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 5. Zusagen -->
+    <section class="zusagen" aria-labelledby="zusagen-titel">
+      <div class="huelle">
+        <div class="abschnitt-kopf">
+          <h2 id="zusagen-titel">What you can rely on.</h2>
+        </div>
+        <div class="kacheln">
+          <article class="kachel kachel-zahlen" data-kachel>
+            <div class="kachel-text">
+              <h3>Numbers, not promises</h3>
+              <p>Every month you see what posts and ads delivered, and you decide how to continue.</p>
+            </div>
+            <figure class="kurve">
+              <svg viewBox="0 0 560 240" role="img" aria-label="Example illustration of a monthly overview with a rising line. Not real figures.">
+                <g class="kurve-raster" fill="none" stroke="currentColor">
+                  <path d="M0 40h560M0 100h560M0 160h560M0 220h560"/>
+                </g>
+                <path class="kurve-flaeche" d="M0 196C60 190 86 168 132 170s66 22 110 4 70-60 118-64 62 26 104 2 62-74 96-88V220H0z"/>
+                <path class="kurve-linie" pathLength="1" d="M0 196C60 190 86 168 132 170s66 22 110 4 70-60 118-64 62 26 104 2 62-74 96-88" fill="none" stroke-linecap="round"/>
+                <circle class="kurve-punkt" cx="560" cy="24" r="7"/>
+              </svg>
+              <figcaption>Example illustration, not real figures</figcaption>
+            </figure>
+          </article>
+
+          <article class="kachel kachel-einer" data-kachel>
+            <svg class="kachel-zeichen" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="24" r="11"/><path d="M10 56c2-12 11-18 22-18s20 6 22 18"/></svg>
+            <h3>One point of contact</h3>
+            <p>You always talk to me, not to changing staff.</p>
+          </article>
+
+          <article class="kachel kachel-monat" data-kachel>
+            <svg class="kachel-zeichen" viewBox="0 0 64 64" aria-hidden="true"><rect x="9" y="13" width="46" height="42" rx="8"/><path d="M9 26h46M22 7v11M42 7v11M24 41l6 6 11-12"/></svg>
+            <h3>Cancel monthly</h3>
+            <p>No long contract term. Your accounts, content and data belong to you.</p>
+          </article>
+
+          <article class="kachel kachel-ort" data-kachel>
+            <div class="kachel-text">
+              <h3>From Augsburg, for anywhere</h3>
+              <p>I am based in Augsburg, Germany. I work for businesses across Germany and internationally, in German and English.</p>
+            </div>
+            <svg class="ringe" viewBox="0 0 420 260" role="img" aria-label="Drawing: rings spreading outwards from a point labelled Augsburg">
+              <g fill="none" stroke-linecap="round" class="ringe-linien">
+                <circle cx="70" cy="200" r="60"/>
+                <circle cx="70" cy="200" r="130"/>
+                <circle cx="70" cy="200" r="200"/>
+                <circle cx="70" cy="200" r="270"/>
+                <circle cx="70" cy="200" r="340"/>
+              </g>
+              <circle cx="70" cy="200" r="9" class="ringe-punkt"/>
+              <text x="90" y="205" class="ringe-name">Augsburg</text>
+            </svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Gründer -->
+    <section class="gruender" id="gruender" aria-labelledby="gruender-titel">
+      <div class="huelle gruender-innen">
+        <div class="gruender-bilder" data-fotos>
+          <figure class="foto foto-gross">
+            <picture>
+              <source type="image/webp" srcset="../assets/gruender-640-DSlIWgrx.webp 640w, ../assets/gruender-1100-C5ogRq-_.webp 1100w" sizes="(min-width: 900px) 460px, 86vw">
+              <img src="../assets/gruender-640-C05rMb9t.jpg" srcset="../assets/gruender-640-C05rMb9t.jpg 640w, ../assets/gruender-1100-Bwjng8sl.jpg 1100w" sizes="(min-width: 900px) 460px, 86vw" width="1100" height="1375" loading="lazy" decoding="async" alt="Constantin Csernai smiling at a summit cross with a mountain panorama behind him">
+            </picture>
+          </figure>
+          <figure class="foto foto-klein">
+            <picture>
+              <source type="image/webp" srcset="../assets/wanderung-400-BqQjDS2V.webp 400w, ../assets/wanderung-720-Ce9hVLnf.webp 720w" sizes="(min-width: 900px) 200px, 38vw">
+              <img src="../assets/wanderung-400-D5PI53Se.jpg" srcset="../assets/wanderung-400-D5PI53Se.jpg 400w, ../assets/wanderung-720-DBKDxk9D.jpg 720w" sizes="(min-width: 900px) 200px, 38vw" width="720" height="900" loading="lazy" decoding="async" alt="Constantin Csernai on a hike with his dog">
+            </picture>
+          </figure>
+        </div>
+        <div class="gruender-text">
+          <h2 id="gruender-titel">Hi, I’m Constantin.</h2>
+          <p class="vorspann">Founder of Nordgrad</p>
+          <p>I founded Nordgrad because I have been working with social media, content and advertising for years and wanted to turn that into my own business. What I have learned along the way now goes straight into your project.</p>
+          <p>The name stands for a clear course: know where north is and work towards it, degree by degree. That takes a plan and stamina rather than a sprint. I know that from the mountains.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Kontakt -->
+    <section class="kontakt" id="kontakt" aria-labelledby="kontakt-titel">
+      <div class="huelle">
+        <h2 id="kontakt-titel">Tell me about your plans.</h2>
+        <p class="vorspann">Send me a short note about what you have in mind. I will get back to you within two working days, by phone if you prefer.</p>
+        <ul class="kontakt-wege">
+          <li>
+            <span class="kontakt-art">Email</span>
+            <a href="mailto:nordgrad.augsburg@gmail.com?subject=Social%20media%20enquiry">nordgrad.augsburg<wbr>@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fuss">
+    <div class="huelle fuss-innen">
+      <span>Nordgrad – Constantin Csernai, Augsburg</span>
+      <nav aria-label="Legal">
+        <a href="legal-notice.html">Legal notice</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

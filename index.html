@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nordgrad – Social Media, Werbung und Webdesign</title>
+  <meta name="description" content="Mehr Reichweite für Ihr Unternehmen: Social-Media-Betreuung, Content mit Creatorn, Werbeanzeigen auf Instagram, Facebook und TikTok und Webseiten, die Anfragen bringen. Von Augsburg aus, deutschlandweit und international.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="alternate" hreflang="de" href="https://nordgrad.eu/">
+  <link rel="alternate" hreflang="en" href="https://nordgrad.eu/en/">
+  <link rel="alternate" hreflang="x-default" href="https://nordgrad.eu/">
+  <link rel="icon" href="./zeichen.svg" type="image/svg+xml">
+  <script>
+    /* Bewegte Fassung nur, wenn das Gerät Bewegung nicht reduziert haben will.
+       Falls das Hauptskript nicht lädt, wird nach 4 s alles ohne Bewegung gezeigt. */
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      // Vorschau: mit ?bewegung=an läuft die bewegte Fassung auch dann, wenn am Gerät Animationen aus sind.
+      var erzwungen = /[?&]bewegung=an(&|$)/.test(location.search);
+      if (erzwungen) d.classList.add('erzwungen');
+      if (erzwungen || window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+        d.classList.add('bewegt');
+        setTimeout(function () { if (!window.__seiteBereit) d.classList.remove('bewegt'); }, 4000);
+      }
+    })();
+  </script>
+  <script type="module" crossorigin src="./assets/haupt-DTCzQ9o9.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/haupt-CMyVVZ3z.css">
+</head>
+<body>
+  <svg width="0" height="0" class="unsichtbar" aria-hidden="true" focusable="false">
+    <symbol id="zeichen" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 25.5 13.75 7 22.5 25.5" stroke-width="3.2"/>
+        <circle cx="25.75" cy="8.5" r="3" stroke-width="2.4"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a class="sprung" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="kopf">
+    <div class="kopf-innen">
+      <a class="kopf-name" href="./" aria-label="Nordgrad, zur Startseite">
+        <svg class="kopf-zeichen" aria-hidden="true"><use href="#zeichen"/></svg>
+        <span>Nordgrad</span>
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <a class="nur-breit" href="./#leistungen">Leistungen</a>
+        <a class="nur-breit" href="./#ablauf">Ablauf</a>
+        <a class="sprache" href="en/" lang="en" hreflang="en" aria-label="English version">EN</a>
+        <a class="kopf-kontakt" href="./#kontakt">Kontakt</a>
+      </nav>
+    </div>
+    <span class="lesefortschritt" aria-hidden="true"></span>
+  </header>
+
+  <main id="inhalt">
+    <!-- 1. Einstieg mit 3D-Visitenkarte -->
+    <section class="held" aria-labelledby="held-titel">
+      <div class="huelle held-text">
+        <h1 id="held-titel">Mehr Reichweite für Ihr Unternehmen.</h1>
+        <p class="vorspann" data-auf>Social Media, Inhalte mit Creatorn, Werbeanzeigen und die Webseite dazu. Alles aus einer Hand, deutschlandweit und international.</p>
+        <div class="knoepfe" data-auf>
+          <a class="knopf voll" href="mailto:nordgrad.augsburg@gmail.com?subject=Anfrage%20Social%20Media">E-Mail schreiben</a>
+          <a class="knopf leer" href="#leistungen">Leistungen ansehen</a>
+        </div>
+      </div>
+
+      <div class="karte-raum">
+        <div class="karte-scroll">
+          <div class="karte-kipp">
+            <div class="karte" id="karte">
+              <div class="karte-seite karte-vorn">
+                <div class="karte-muster" aria-hidden="true"></div>
+                <div class="karte-glanz" aria-hidden="true"></div>
+                <svg class="karte-zeichen" aria-hidden="true"><use href="#zeichen"/></svg>
+                <div class="karte-kopf">
+                  <p class="karte-name">Constantin Csernai</p>
+                  <p class="karte-rolle">Gründer von Nordgrad</p>
+                </div>
+                <p class="karte-ort">Augsburg, Deutschland</p>
+              </div>
+              <div class="karte-seite karte-hinten" inert>
+                <div class="karte-glanz" aria-hidden="true"></div>
+                <dl class="karte-daten">
+                  <div><dt>E-Mail</dt><dd><a href="mailto:nordgrad.augsburg@gmail.com">nordgrad.augsburg@gmail.com</a></dd></div>
+                  <div><dt>Sitz</dt><dd>Augsburg, Deutschland</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="karte-wenden" type="button" aria-controls="karte" data-vor="Karte wenden" data-zurueck="Vorderseite zeigen">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10a6 6 0 0 1 10.6-3.8M16 10a6 6 0 0 1-10.6 3.8M14.8 2.8v3.6h-3.6M5.2 17.2v-3.6h3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-wenden-text>Karte wenden</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 2. Leistungen: Scroll-Szene mit Handy -->
+    <section class="leistungen" id="leistungen" aria-labelledby="leistungen-titel">
+      <div class="huelle abschnitt-kopf">
+        <h2 id="leistungen-titel">Was ich für Sie mache.</h2>
+        <p>Vier Bausteine, die zusammengehören. Sie können mit einem anfangen.</p>
+      </div>
+
+      <div class="spur" data-spur>
+        <div class="buehne">
+          <ol class="fortschritt" aria-hidden="true">
+            <li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li>
+          </ol>
+
+          <article class="leistung" data-leistung>
+            <div class="leistung-text">
+              <h3>Social-Media-Betreuung</h3>
+              <p>Ich plane Ihre Beiträge für Instagram, TikTok und Facebook, gestalte sie in Ihrem Stil und veröffentliche sie regelmäßig. Kommentare und Nachrichten behalte ich im Blick. Sie geben jeden Beitrag frei, bevor er erscheint.</p>
+            </div>
+            <div class="geraet" role="img" aria-label="Beispielbild: ein Social-Media-Profil mit Beiträgen und dem Wochenplan für neue Beiträge">
+              <div class="schirm"><div class="schirm-inhalt s-feed" aria-hidden="true">
+                <div class="app-kopf"><span class="avatar"></span><span class="app-name">ihr.unternehmen</span><span class="marke">Beispiel</span></div>
+                <div class="beitrag">
+                  <div class="bild bild-laden"><i></i><i></i><i></i></div>
+                  <div class="aktionen"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9.6A4 4 0 0 1 12 8a4 4 0 0 1 7 2.4C19 15.6 12 20 12 20z"/></svg><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z"/></svg><svg viewBox="0 0 24 24"><path d="m20 4-8.5 16-2-7-7-2z"/></svg></div>
+                  <span class="zeile" style="--w:72%"></span>
+                  <span class="zeile" style="--w:46%"></span>
+                </div>
+                <div class="beitrag"><div class="bild bild-zwei"><i></i><i></i></div></div>
+                <div class="plan">
+                  <span class="plan-titel">Diese Woche geplant</span>
+                  <ol class="tage"><li class="an"><b></b>Mo</li><li><b></b>Di</li><li class="an"><b></b>Mi</li><li><b></b>Do</li><li class="an"><b></b>Fr</li><li><b></b>Sa</li><li><b></b>So</li></ol>
+                </div>
+              </div></div>
+            </div>
+          </article>
+
+          <article class="leistung" data-leistung>
+            <div class="leistung-text">
+              <h3>Content und Creator</h3>
+              <p>Kurzvideos, Reels und Fotos für Ihre Kanäle. In Augsburg und Umgebung drehe ich selbst bei Ihnen vor Ort. Auf Wunsch bringe ich Sie mit Creatorn zusammen, die zu Ihrem Unternehmen und Ihrer Region passen.</p>
+            </div>
+            <div class="geraet" role="img" aria-label="Beispielbild: ein Kurzvideo mit drei Einstellungen aus einem Unternehmen">
+              <div class="schirm"><div class="schirm-inhalt s-reel" aria-hidden="true">
+                <div class="streifen">
+                  <div class="schuss schuss-1"><b></b><i></i><u></u></div>
+                  <div class="schuss schuss-2"><i></i><b></b></div>
+                  <div class="schuss schuss-3"><i></i></div>
+                </div>
+                <span class="marke hell">Beispiel</span>
+                <div class="reel-leiste"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9.6A4 4 0 0 1 12 8a4 4 0 0 1 7 2.4C19 15.6 12 20 12 20z"/></svg><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z"/></svg><svg viewBox="0 0 24 24"><path d="m20 4-8.5 16-2-7-7-2z"/></svg></div>
+                <div class="reel-fuss">
+                  <span class="reel-wer"><span class="avatar"></span>Creator</span>
+                  <span class="reel-titel">Ein Tag bei Ihnen im Unternehmen</span>
+                  <span class="reel-balken"><i></i></span>
+                </div>
+              </div></div>
+            </div>
+          </article>
+
+          <article class="leistung" data-leistung>
+            <div class="leistung-text">
+              <h3>Werbeanzeigen</h3>
+              <p>Anzeigen auf Instagram, Facebook und TikTok für genau die Menschen, die Sie erreichen wollen: im Umkreis Ihres Standorts, in einem Land oder in mehreren. Sie legen das Budget fest, ich richte die Kampagnen ein, verbessere sie laufend und zeige Ihnen, was sie gebracht haben.</p>
+            </div>
+            <div class="geraet" role="img" aria-label="Beispielbild: eine Karte mit einem Umkreis um einen Standort und darunter eine Anzeige">
+              <div class="schirm"><div class="schirm-inhalt s-anzeige" aria-hidden="true">
+                <div class="karte-flaeche">
+                  <svg viewBox="0 0 200 220" preserveAspectRatio="xMidYMid slice">
+                    <rect width="200" height="220" fill="#e7eee9"/>
+                    <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round">
+                      <path d="M-10 60 80 78l130 -30M30 -10l22 120 -20 130M120 -10l18 100 40 140M-10 150l110 -16 110 34"/>
+                    </g>
+                    <g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round">
+                      <path d="M0 105l52 4M52 109l88 -20M70 0l14 78M84 78l16 56M150 60l60 14M100 134l-14 90M138 90l-38 44"/>
+                    </g>
+                    <path d="M172 -10c-8 40 6 70 -4 110s-26 70 -20 130" fill="none" stroke="#a9cfe0" stroke-width="9" stroke-linecap="round"/>
+                    <path d="M-10 196c40 -6 70 -30 100 -34" fill="none" stroke="#a9cfe0" stroke-width="5" stroke-linecap="round"/>
+                    <rect x="20" y="20" width="26" height="22" rx="4" fill="#d3e4d8"/>
+                    <rect x="112" y="150" width="34" height="26" rx="4" fill="#d3e4d8"/>
+                  </svg>
+                  <span class="umkreis"></span>
+                  <span class="nadel"><svg viewBox="0 0 24 30"><path d="M12 29S2 18.5 2 11.5a10 10 0 0 1 20 0C22 18.5 12 29 12 29z"/><circle cx="12" cy="11.5" r="3.6" fill="#fff"/></svg></span>
+                  <span class="marke">Beispiel</span>
+                </div>
+                <div class="regler"><span>Umkreis um Ihren Standort</span><span class="regler-bahn"><i></i><b></b></span></div>
+                <div class="anzeige">
+                  <span class="avatar"></span>
+                  <span class="anzeige-text"><span class="app-name">ihr.unternehmen</span><span class="gesponsert">Gesponsert</span></span>
+                  <span class="anzeige-knopf">Mehr erfahren</span>
+                </div>
+              </div></div>
+            </div>
+          </article>
+
+          <article class="leistung" data-leistung>
+            <div class="leistung-text">
+              <h3>Webdesign</h3>
+              <p>Eine schnelle, klare Webseite, auf der Besucher aus Social Media und Werbung sofort finden, was sie suchen, und Sie direkt anrufen oder anschreiben. Mit Impressum und Datenschutzerklärung, ohne Werkzeuge, die Daten Ihrer Besucher an Dritte schicken.</p>
+            </div>
+            <div class="geraet" role="img" aria-label="Beispielbild: eine Webseite auf dem Handy, die sich aus Bausteinen zusammensetzt">
+              <div class="schirm"><div class="schirm-inhalt s-web" aria-hidden="true">
+                <div class="browser"><span class="adresse">ihr-unternehmen.de</span><span class="marke">Beispiel</span></div>
+                <div class="web-held baustein"><span class="zeile hell" style="--w:78%"></span><span class="zeile hell" style="--w:52%"></span></div>
+                <div class="web-knopf baustein">Anrufen</div>
+                <div class="web-zeilen baustein"><span class="zeile" style="--w:92%"></span><span class="zeile" style="--w:84%"></span><span class="zeile" style="--w:60%"></span></div>
+                <div class="web-kacheln"><span class="baustein"></span><span class="baustein"></span></div>
+                <div class="web-fuss baustein"><span>Impressum</span><span>Datenschutz</span></div>
+              </div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Weltkugel aus Beitrags-Kacheln (3D) -->
+    <section class="kugel" aria-labelledby="kugel-titel">
+      <div class="kugel-spur" data-kugel>
+        <div class="kugel-buehne">
+          <div class="kugel-bild">
+            <canvas class="kugel-leinwand" aria-hidden="true"></canvas>
+            <svg class="kugel-ersatz" aria-hidden="true"><use href="#zeichen"/></svg>
+          </div>
+          <div class="huelle kugel-text">
+            <h2 id="kugel-titel">Aus vielen einzelnen Beiträgen wird Reichweite.</h2>
+            <p data-kugel-satz>Ein Beitrag allein fällt kaum auf. Regelmäßig, geplant und im gleichen Stil entsteht daraus ein Bild, das man wiedererkennt.</p>
+            <p class="kugel-notiz" data-kugel-satz>Jede Kachel steht für einen Beitrag. Zusammen reichen sie weit über die eigene Stadt hinaus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Ablauf -->
+    <section class="ablauf" id="ablauf" aria-labelledby="ablauf-titel">
+      <div class="huelle">
+        <div class="abschnitt-kopf">
+          <h2 id="ablauf-titel">So läuft es ab.</h2>
+          <p>Vier Schritte, vom ersten Gespräch bis zur monatlichen Auswertung.</p>
+        </div>
+        <ol class="schritte" data-schritte>
+          <li class="schritte-linie" aria-hidden="true"><span></span></li>
+          <li class="schritt">
+            <span class="schritt-nr" aria-hidden="true">1</span>
+            <h3>Gespräch</h3>
+            <p>Wir sprechen über Ihr Unternehmen, Ihre Kunden und Ihre Ziele, vor Ort oder per Video. Das kostet nichts.</p>
+          </li>
+          <li class="schritt">
+            <span class="schritt-nr" aria-hidden="true">2</span>
+            <h3>Plan und Angebot</h3>
+            <p>Ich schaue mir Ihre Kanäle an und schlage einen Plan vor, mit festem Preis pro Monat oder pro Projekt.</p>
+          </li>
+          <li class="schritt">
+            <span class="schritt-nr" aria-hidden="true">3</span>
+            <h3>Umsetzung</h3>
+            <p>Ich produziere Inhalte, plane Beiträge und starte die Anzeigen. Sie geben frei, was online geht.</p>
+          </li>
+          <li class="schritt">
+            <span class="schritt-nr" aria-hidden="true">4</span>
+            <h3>Auswertung</h3>
+            <p>Jeden Monat bekommen Sie eine kurze Übersicht: Reichweite, neue Follower, Anfragen und was wir als Nächstes ändern.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 5. Zusagen -->
+    <section class="zusagen" aria-labelledby="zusagen-titel">
+      <div class="huelle">
+        <div class="abschnitt-kopf">
+          <h2 id="zusagen-titel">Worauf Sie sich verlassen können.</h2>
+        </div>
+        <div class="kacheln">
+          <article class="kachel kachel-zahlen" data-kachel>
+            <div class="kachel-text">
+              <h3>Zahlen statt Versprechen</h3>
+              <p>Sie sehen jeden Monat, was Beiträge und Anzeigen gebracht haben, und entscheiden, wie es weitergeht.</p>
+            </div>
+            <figure class="kurve">
+              <svg viewBox="0 0 560 240" role="img" aria-label="Beispiel-Darstellung einer Monatsübersicht mit einer steigenden Linie. Keine echten Zahlen.">
+                <g class="kurve-raster" fill="none" stroke="currentColor">
+                  <path d="M0 40h560M0 100h560M0 160h560M0 220h560"/>
+                </g>
+                <path class="kurve-flaeche" d="M0 196C60 190 86 168 132 170s66 22 110 4 70-60 118-64 62 26 104 2 62-74 96-88V220H0z"/>
+                <path class="kurve-linie" pathLength="1" d="M0 196C60 190 86 168 132 170s66 22 110 4 70-60 118-64 62 26 104 2 62-74 96-88" fill="none" stroke-linecap="round"/>
+                <circle class="kurve-punkt" cx="560" cy="24" r="7"/>
+              </svg>
+              <figcaption>Beispiel-Darstellung, keine echten Zahlen</figcaption>
+            </figure>
+          </article>
+
+          <article class="kachel kachel-einer" data-kachel>
+            <svg class="kachel-zeichen" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="24" r="11"/><path d="M10 56c2-12 11-18 22-18s20 6 22 18"/></svg>
+            <h3>Ein Ansprechpartner</h3>
+            <p>Sie sprechen immer mit mir, nicht mit wechselnden Mitarbeitern.</p>
+          </article>
+
+          <article class="kachel kachel-monat" data-kachel>
+            <svg class="kachel-zeichen" viewBox="0 0 64 64" aria-hidden="true"><rect x="9" y="13" width="46" height="42" rx="8"/><path d="M9 26h46M22 7v11M42 7v11M24 41l6 6 11-12"/></svg>
+            <h3>Monatlich kündbar</h3>
+            <p>Keine lange Vertragsbindung. Ihre Konten, Inhalte und Daten gehören Ihnen.</p>
+          </article>
+
+          <article class="kachel kachel-ort" data-kachel>
+            <div class="kachel-text">
+              <h3>Von Augsburg aus, für überall</h3>
+              <p>Mein Sitz ist Augsburg. Ich arbeite für Unternehmen in ganz Deutschland und international, auf Deutsch und Englisch.</p>
+            </div>
+            <svg class="ringe" viewBox="0 0 420 260" role="img" aria-label="Zeichnung: Ringe, die sich von einem Punkt namens Augsburg nach außen ausbreiten">
+              <g fill="none" stroke-linecap="round" class="ringe-linien">
+                <circle cx="70" cy="200" r="60"/>
+                <circle cx="70" cy="200" r="130"/>
+                <circle cx="70" cy="200" r="200"/>
+                <circle cx="70" cy="200" r="270"/>
+                <circle cx="70" cy="200" r="340"/>
+              </g>
+              <circle cx="70" cy="200" r="9" class="ringe-punkt"/>
+              <text x="90" y="205" class="ringe-name">Augsburg</text>
+            </svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Gründer -->
+    <section class="gruender" id="gruender" aria-labelledby="gruender-titel">
+      <div class="huelle gruender-innen">
+        <div class="gruender-bilder" data-fotos>
+          <figure class="foto foto-gross">
+            <picture>
+              <source type="image/webp" srcset="./assets/gruender-640-DSlIWgrx.webp 640w, ./assets/gruender-1100-C5ogRq-_.webp 1100w" sizes="(min-width: 900px) 460px, 86vw">
+              <img src="./assets/gruender-640-C05rMb9t.jpg" srcset="./assets/gruender-640-C05rMb9t.jpg 640w, ./assets/gruender-1100-Bwjng8sl.jpg 1100w" sizes="(min-width: 900px) 460px, 86vw" width="1100" height="1375" loading="lazy" decoding="async" alt="Constantin Csernai lachend am Gipfelkreuz, dahinter ein Bergpanorama">
+            </picture>
+          </figure>
+          <figure class="foto foto-klein">
+            <picture>
+              <source type="image/webp" srcset="./assets/wanderung-400-BqQjDS2V.webp 400w, ./assets/wanderung-720-Ce9hVLnf.webp 720w" sizes="(min-width: 900px) 200px, 38vw">
+              <img src="./assets/wanderung-400-D5PI53Se.jpg" srcset="./assets/wanderung-400-D5PI53Se.jpg 400w, ./assets/wanderung-720-DBKDxk9D.jpg 720w" sizes="(min-width: 900px) 200px, 38vw" width="720" height="900" loading="lazy" decoding="async" alt="Constantin Csernai mit Hund auf einer Wanderung">
+            </picture>
+          </figure>
+        </div>
+        <div class="gruender-text">
+          <h2 id="gruender-titel">Hallo, ich bin Constantin.</h2>
+          <p class="vorspann">Gründer von Nordgrad</p>
+          <p>Ich habe Nordgrad gegründet, weil ich mich seit Jahren mit Social Media, Content und Werbung beschäftige und daraus mein eigenes Unternehmen machen wollte. Was ich dabei gelernt habe, setze ich jetzt direkt für Sie ein.</p>
+          <p>Der Name steht für einen klaren Kurs: wissen, wo Norden ist, und Grad für Grad darauf zuarbeiten. Dafür braucht es keinen Sprint, sondern einen Plan und Ausdauer. Das kenne ich vom Berg.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Kontakt -->
+    <section class="kontakt" id="kontakt" aria-labelledby="kontakt-titel">
+      <div class="huelle">
+        <h2 id="kontakt-titel">Erzählen Sie mir von Ihrem Vorhaben.</h2>
+        <p class="vorspann">Schreiben Sie mir kurz, was Sie vorhaben. Ich melde mich innerhalb von zwei Werktagen, auf Wunsch auch telefonisch.</p>
+        <ul class="kontakt-wege">
+          <li>
+            <span class="kontakt-art">E-Mail</span>
+            <a href="mailto:nordgrad.augsburg@gmail.com?subject=Anfrage%20Social%20Media">nordgrad.augsburg<wbr>@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fuss">
+    <div class="huelle fuss-innen">
+      <span>Nordgrad – Constantin Csernai, Augsburg</span>
+      <nav aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

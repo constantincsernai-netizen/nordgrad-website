@@ -16,8 +16,9 @@
     (function () {
       var d = document.documentElement;
       d.classList.add('js');
-      // Vorschau: mit ?bewegung=an läuft die bewegte Fassung auch dann, wenn am Gerät Animationen aus sind.
-      var erzwungen = /[?&]bewegung=an(&|$)/.test(location.search);
+      // Die bewegte Fassung läuft immer, auch wenn am Gerät Animationen aus sind (Wunsch Consti, 22.11.2026).
+      // Ruhige Fassung nur noch mit ?bewegung=aus.
+      var erzwungen = !/[?&]bewegung=aus(&|$)/.test(location.search);
       if (erzwungen) d.classList.add('erzwungen');
       if (erzwungen || window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
         d.classList.add('bewegt');

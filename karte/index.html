@@ -32,9 +32,19 @@ p.text { font-size: 18px; line-height: 1.45; color: var(--leise); }
 @media (hover: hover) { .voll:hover { background: #b4e5cb; } .leer:hover { background: rgba(255,255,255,.07); } }
 :focus-visible { outline: 3px solid var(--hell); outline-offset: 3px; }
 ul { list-style: none; padding: 0; display: grid; gap: 10px; }
-li a { display: grid; grid-template-columns: 92px 1fr; align-items: center; gap: 10px; padding: 14px 18px; border-radius: 16px;
-  color: var(--text); text-decoration: none; background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); font-size: 16px; }
-li span { color: var(--hell); font-size: 14px; font-weight: 600; }
+li a { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 18px;
+  color: var(--text); text-decoration: none; background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1px rgba(255,255,255,.12);
+  transition: background-color .15s ease-out, transform .15s ease-out; }
+li a:active { transform: scale(.98); }
+@media (hover: hover) { li a:hover { background: rgba(255,255,255,.13); } }
+li svg { width: 40px; height: 40px; flex: none; padding: 9px; border-radius: 12px; background: rgba(154,216,184,.16);
+  fill: none; stroke: var(--hell); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+li .feld { display: grid; gap: 2px; min-width: 0; }
+li .art { color: var(--hell); font-size: 13px; font-weight: 600; letter-spacing: .04em; }
+li .wert { font-size: clamp(14px, 4.5vw, 16.5px); font-weight: 500; letter-spacing: -0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+li .umbruch { white-space: normal; overflow: visible; }
+.zwei { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.zwei .knopf { padding: 0 12px; }
 small { color: var(--leise); font-size: 13px; text-align: center; }
 small a { color: inherit; }
 </style>
@@ -51,11 +61,15 @@ small a { color: inherit; }
   </div>
   <p class="text">Social Media, Content, Werbeanzeigen und Webdesign für Unternehmen. Auf Deutsch und Englisch.</p>
   <a class="knopf voll" href="../nordgrad.vcf" download="Constantin-Csernai-Nordgrad.vcf">Kontakt speichern</a>
-  <a class="knopf leer" href="mailto:nordgrad.augsburg@gmail.com?subject=Anfrage%20%C3%BCber%20die%20Visitenkarte">E-Mail schreiben</a>
+  <div class="zwei">
+    <a class="knopf leer" href="tel:+4915679842759">Anrufen</a>
+    <a class="knopf leer" href="mailto:nordgrad.augsburg@gmail.com?subject=Anfrage%20%C3%BCber%20die%20Visitenkarte">E-Mail</a>
+  </div>
   <ul>
-    <li><a href="https://nordgrad.eu/"><span>Webseite</span>nordgrad.eu</a></li>
-    <li><a href="https://www.instagram.com/nordgrad.eu/" rel="noopener"><span>Instagram</span>@nordgrad.eu</a></li>
-    <li><a href="mailto:nordgrad.augsburg@gmail.com"><span>E-Mail</span>nordgrad.augsburg<wbr>@gmail.com</a></li>
+    <li><a href="tel:+4915679842759"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.6l1.4 4-2 1.4a12 12 0 0 0 6.5 6.5l1.4-2 4 1.4v2.6a2 2 0 0 1-2.1 2A16.5 16.5 0 0 1 4.6 5.6a2 2 0 0 1 2-2.1z"/></svg><span class="feld"><span class="art">Telefon</span><span class="wert">01567 9842759</span></span></a></li>
+    <li><a href="mailto:nordgrad.augsburg@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="m4.5 7 7.5 6 7.5-6"/></svg><span class="feld"><span class="art">E-Mail</span><span class="wert umbruch">nordgrad.augsburg<wbr>@gmail.com</span></span></a></li>
+    <li><a href="https://nordgrad.eu/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.4 3.5 5.3 3.5 8.5s-1 6.1-3.5 8.5c-2.5-2.4-3.5-5.3-3.5-8.5s1-6.1 3.5-8.5z"/></svg><span class="feld"><span class="art">Webseite</span><span class="wert">nordgrad.eu</span></span></a></li>
+    <li><a href="https://www.instagram.com/nordgrad.eu/" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.9" cy="7.1" r=".6" fill="#9ad8b8"/></svg><span class="feld"><span class="art">Instagram</span><span class="wert">@nordgrad.eu</span></span></a></li>
   </ul>
   <small><a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></small>
 </main>

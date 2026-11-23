@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Constantin Csernai – Nordgrad</title>
+<meta name="description" content="Digitale Visitenkarte von Constantin Csernai, Gründer von Nordgrad: Social Media, Content, Werbeanzeigen und Webdesign.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1f5a43">
+<link rel="icon" href="../zeichen.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="logo.jpg">
+<style>
+@font-face { font-family: Geist; src: url(geist.woff2) format('woff2'); font-weight: 100 900; font-display: swap; }
+:root { --gruen: #1f5a43; --tief: #0b1f17; --hell: #9ad8b8; --text: #f1f6f2; --leise: rgba(241,246,242,.72); }
+* { box-sizing: border-box; margin: 0; }
+html { background: var(--tief); }
+body { min-height: 100svh; font-family: Geist, system-ui, -apple-system, sans-serif; color: var(--text);
+  background: radial-gradient(120% 80% at 15% 0%, #27705a 0%, #1f5a43 35%, #0b1f17 80%);
+  display: grid; place-items: center; padding: 28px 16px; }
+main { width: 100%; max-width: 420px; display: grid; gap: 22px; }
+.kopf { display: flex; align-items: center; gap: 16px; }
+.kopf img { width: 72px; height: 72px; border-radius: 18px; box-shadow: 0 0 0 1.5px rgba(154,216,184,.45); }
+.marke { font-size: 15px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--hell); }
+h1 { font-size: 34px; line-height: 1.08; font-weight: 650; letter-spacing: -0.03em; }
+.rolle { color: var(--leise); font-size: 17px; margin-top: 4px; }
+p.text { font-size: 18px; line-height: 1.45; color: var(--leise); }
+.knopf { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 22px; border-radius: 999px;
+  font-size: 17px; font-weight: 600; text-decoration: none; transition: transform .15s ease-out, background-color .15s ease-out; }
+.knopf:active { transform: scale(.97); }
+.voll { color: var(--tief); background: var(--hell); }
+.leer { color: var(--text); box-shadow: inset 0 0 0 1.5px rgba(241,246,242,.35); }
+@media (hover: hover) { .voll:hover { background: #b4e5cb; } .leer:hover { background: rgba(255,255,255,.07); } }
+:focus-visible { outline: 3px solid var(--hell); outline-offset: 3px; }
+ul { list-style: none; padding: 0; display: grid; gap: 10px; }
+li a { display: grid; grid-template-columns: 92px 1fr; align-items: center; gap: 10px; padding: 14px 18px; border-radius: 16px;
+  color: var(--text); text-decoration: none; background: rgba(255,255,255,.08); box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); font-size: 16px; }
+li span { color: var(--hell); font-size: 14px; font-weight: 600; }
+small { color: var(--leise); font-size: 13px; text-align: center; }
+small a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <div class="kopf">
+    <img src="logo.jpg" alt="Nordgrad-Logo" width="72" height="72">
+    <div>
+      <div class="marke">Nordgrad</div>
+      <h1>Constantin Csernai</h1>
+      <div class="rolle">Gründer · Augsburg</div>
+    </div>
+  </div>
+  <p class="text">Social Media, Content, Werbeanzeigen und Webdesign für Unternehmen. Auf Deutsch und Englisch.</p>
+  <a class="knopf voll" href="../nordgrad.vcf" download="Constantin-Csernai-Nordgrad.vcf">Kontakt speichern</a>
+  <a class="knopf leer" href="mailto:nordgrad.augsburg@gmail.com?subject=Anfrage%20%C3%BCber%20die%20Visitenkarte">E-Mail schreiben</a>
+  <ul>
+    <li><a href="https://nordgrad.eu/"><span>Webseite</span>nordgrad.eu</a></li>
+    <li><a href="https://www.instagram.com/nordgrad.eu/" rel="noopener"><span>Instagram</span>@nordgrad.eu</a></li>
+    <li><a href="mailto:nordgrad.augsburg@gmail.com"><span>E-Mail</span>nordgrad.augsburg<wbr>@gmail.com</a></li>
+  </ul>
+  <small><a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></small>
+</main>
+</body>
+</html>
